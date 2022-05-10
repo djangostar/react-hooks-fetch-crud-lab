@@ -5,13 +5,13 @@ import QuestionItem from "./QuestionItem"
 function QuestionList() {
   const [questions, setQuestions] = useState([])
 
-  useEffect(() => {
-    fetch("http://localhost:4000/questions")
-      .then(res => res.json())
-      .then(questions => {
-        setQuestions(questions)
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:4000/questions")
+  //     .then(res => res.json())
+  //     .then(questions => {
+  //       setQuestions(questions)
+  //     });
+  // }, []);
 
   const questionList = questions.map((question) => (
     <QuestionItem
